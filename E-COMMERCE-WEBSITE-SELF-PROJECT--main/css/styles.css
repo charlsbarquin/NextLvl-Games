@@ -1,0 +1,273 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar {
+  border-bottom: 2px solid #ffea00;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffea00;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  background-color: #333;
+  border: none;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #ffea00;
+  color: #333;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffea00;
+  transition: bor der-bottom 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Underline for active nav link */
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffea00; /* Underline effect */
+  transition: border-bottom 0.3s ease-in-out;
+  color: #ffea00; /* Optional: Change text color for active link */
+}
+
+/* Optional: Hover effect for all links */
+.navbar-nav .nav-link:hover {
+  color: #ffea00;
+  border-bottom: 2px solid #ffea00;
+}
+
+.dropdown-menu {
+  animation: fadeInDropdown 0.5s ease;
+}
+
+@keyframes fadeInDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(270deg, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-warning {
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 10px rgba(255, 234, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+  transform: scale(1.1);
+}
+
+.btn-warning {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 234, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 234, 0, 1);
+  }
+}
+
+.animate-title {
+  animation: slideIn 2s ease-in-out;
+}
+
+.animate-fade {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+.carousel-item img {
+  height: 75vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#special-offers {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#special-offers h2 {
+  color: #333;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #2575fc;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.btn-warning {
+  color: #000;
+  background-color: #ffea00;
+  border: none;
+  box-shadow: 0 4px 10px rgba(255, 234, 0, 0.5);
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+footer .social-links a {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #ffea00;
+}
+
+.social-links a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.price-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #2575fc; /* Blue color */
+  font-weight: 500; /* Medium weight for better readability */
+  margin-bottom: 1rem; /* Space below */
+}
+
+.justify-text {
+  text-align: justify;
+}

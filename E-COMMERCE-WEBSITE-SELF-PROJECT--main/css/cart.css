@@ -1,0 +1,39 @@
+/* Cart Table Styling */
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table img {
+    border-radius: 8px;
+}
+
+/* Cart Summary Styling */
+.cart-summary {
+    font-size: 1.2rem;
+}
+
+.cart-summary .btn {
+    margin: 0 10px;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+    right: 8px;
+}
+
+/* Add this to your CSS file */
+.custom-dropdown {
+    max-width: 300px;
+}
+
+.checkout-table {
+    background-color: #f0f0f0; /* Grey background color */
+}
+

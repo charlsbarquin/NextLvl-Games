@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Game Details Section */
+.game-details {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+/* Game Image */
+.game-image {
+  flex: 1;
+  text-align: center;
+}
+
+.game-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.game-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Content */
+.game-content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Game Header (Title & Price) */
+.game-header {
+  margin-bottom: 20px;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2575fc;
+}
+
+/* Game Description */
+.game-description {
+  line-height: 1.8;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Additional Details */
+.additional-details {
+  margin-top: 25px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.additional-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.additional-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.additional-details li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.add-to-cart, .buy-now {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.add-to-cart {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+
+.buy-now {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+}
+
+.buy-now:hover {
+  background: linear-gradient(90deg, #ffc371, #ff5f6d);
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex-basis: 100%;
+}
+
+/* Reviews Section Button (View Reviews) */
+/* Reviews Section Button (View Reviews) */
+.reviews-toggle {
+  background-color: #ffea00; /* Yellow background */
+  color: #000; /* Black text */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+  animation: pulse 2s infinite; /* Pulse animation */
+  box-shadow: 0 0 10px rgba(255, 234, 0, 0.5); /* Yellow box-shadow */
+}
+
+/* Hover effect for View Reviews button */
+.reviews-toggle:hover {
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 234, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 234, 0, 1);
+  }
+}
+
+.reviews-content {
+  margin-top: 20px;
+}
+
+.reviews-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.reviews-content ul li {
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reviews-content ul li:hover {
+  transform: translateY(-5px);
+}
+
+.reviews-content ul li p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .game-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-image img {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .game-content {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .reviews-toggle {
+    width: auto;
+  }
+
+  .action-buttons {
+    justify-content: center;
+    width: 100%;
+  }
+}

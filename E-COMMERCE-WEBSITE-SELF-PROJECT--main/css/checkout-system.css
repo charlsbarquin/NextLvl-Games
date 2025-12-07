@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Checkout Form */
+#checkoutForm {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#checkoutForm input[type="text"], 
+#checkoutForm input[type="email"], 
+#checkoutForm select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#checkoutForm input[type="text"]:focus,
+#checkoutForm input[type="email"]:focus,
+#checkoutForm select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#checkoutForm label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#checkoutForm button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#checkoutForm button:hover {
+    background-color: #0056b3;
+}
+
+#loadingMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
+/* Order Confirmation Page */
+.order-confirmation {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-confirmation p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.order-confirmation h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.order-confirmation .order-summary ul {
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+.order-confirmation .order-summary li {
+    margin-bottom: 8px;
+}
+
+.order-confirmation .order-summary strong {
+    font-weight: bold;
+}
+
+.order-confirmation .order-summary {
+    margin-top: 20px;
+}
+
+.order-confirmation .order-total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.order-confirmation .back-to-shop {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.order-confirmation .back-to-shop a {
+    color: #007bff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.order-confirmation .back-to-shop a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #checkoutForm {
+        padding: 15px;
+    }
+
+    #checkoutForm button {
+        padding: 15px;
+    }
+
+    .order-confirmation {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-confirmation h2 {
+        font-size: 1.8rem;
+    }
+
+    .order-confirmation p,
+    .order-confirmation .order-summary {
+        font-size: 1rem;
+    }
+
+    .order-confirmation .order-summary li {
+        font-size: 1rem;
+    }
+
+    .order-confirmation .order-total {
+        font-size: 1.2rem;
+    }
+
+    #checkoutForm input[type="text"], 
+    #checkoutForm input[type="email"], 
+    #checkoutForm select {
+        padding: 10px;
+    }
+
+    #checkoutForm button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+.checkout-title {
+    font-size: 2.0rem;
+}
+
+#additional-fields {
+    margin-top: 15px;
+}
+
+.checkout-table thead {
+    background-color: #f0f0f0; /* Grey background color for the table header */
+}
+
+

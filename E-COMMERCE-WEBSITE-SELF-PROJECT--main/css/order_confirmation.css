@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafc;
+    margin: 0;
+    padding: 0;
+}
+
+.order-summary {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.order-details, .order-items {
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #e3e6eb;
+}
+
+.order-details h4, .order-items h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.order-details p, .order-items p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.table {
+    margin: 20px 0;
+}
+
+.table th {
+    text-align: center;
+    background-color: #f1f3f5;
+    font-weight: 600;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.game-image {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 8px;
+}
+
+.btn-custom {
+    background-color: #ff9f00;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 12px 35px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #e68900;
+}
+
+.thank-you {
+    font-size: 18px;
+    color: #666;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .order-summary {
+        padding: 20px;
+    }
+
+    .btn-custom {
+        padding: 10px 20px;
+    }
+}
